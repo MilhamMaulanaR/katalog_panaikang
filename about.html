@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | UMKM Panaikang</title>
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<style>
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    /* Smooth scroll untuk seluruh halaman */
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center">
+                        <img src="images/logo.png" alt="Ilustrasi" class="w-24 h-24 object-contain">
+                    </a>
+                    <span class="ml-3 text-xl font-bold text-gray-800">UMKM PANAIKANG</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#kategori-section" class="text-gray-700 hover:text-amber-600">Kategori</a>
+                    <a href="produk.html" class="text-gray-700 hover:text-amber-600">Produk UMKM</a>
+                    <a href="umkm.html" class="text-gray-700 hover:text-amber-600">UMKM</a>
+                    <a href="about.html" class="text-gray-700 hover:text-amber-600">About</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-gray-700">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden bg-white border-t px-4 py-4 space-y-2 hidden">
+        <a href="index.html#kategori-section" class="block text-gray-700 hover:text-amber-600 font-medium py-2">Kategori</a>
+        <a href="produk.html" class="block text-gray-700 hover:text-amber-600 font-medium py-2">Produk UMKM</a>
+        <a href="umkm.html" class="block text-gray-700 hover:text-amber-600 font-medium py-2">UMKM</a>
+        <a href="about.html" class="block text-gray-700 hover:text-amber-600 font-medium py-2">About</a>
+    </div>
+
+    <!-- Hero About -->
+   <!-- Hero About -->
+    <section class="relative bg-gradient-to-b from-[#FEECDA] to-white py-16 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="relative flex flex-col lg:flex-row items-start gap-12 max-w-7xl mx-auto">
+                <!-- Text Content -->
+                <div class="lg:w-1/2 z-10">
+                    <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 lg:mb-8 text-black leading-tight">
+                        Tentang UMKM Panaikang
+                    </h2>
+                    <p class="text-gray-700 text-base lg:text-lg leading-relaxed max-w-2xl">
+                        UMKM Panaikang adalah katalog online sederhana yang dibuat untuk mempromosikan produk-produk
+                        unggulan dari Desa Panaikang. Website ini hadir sebagai bagian dari program kerja KKN untuk membantu
+                        pelaku UMKM lokal seperti pembuat kue tradisional, penjahit rumahan, dan pengrajin bambu agar lebih
+                        dikenal luas melalui platform digital.
+                    </p>
+                </div>
+                
+                <!-- Image Layout - Responsive Grid for Mobile, Absolute for Desktop -->
+                <div class="lg:w-1/2 relative">
+                    <!-- Mobile: Simple Grid Layout -->
+                    <div class="grid grid-cols-2 gap-3 lg:hidden">
+                        <img 
+                            src="/images/produk1.png" 
+                            alt="Produk 1" 
+                            class="w-full h-32 object-cover rounded-lg shadow-lg"
+                        />
+                        <img 
+                            src="/images/produk3.png" 
+                            alt="Produk 3" 
+                            class="w-full h-32 object-cover rounded-lg shadow-lg"
+                        />
+                        <img 
+                            src="/images/produk2.png" 
+                            alt="Produk 2" 
+                            class="col-span-2 w-full h-24 object-cover rounded-lg shadow-lg"
+                        />
+                    </div>
+                    
+                    <!-- Desktop: Absolute Positioning Layout -->
+                    <div class="hidden lg:block relative w-full h-[431px]">
+                        <!-- Image 1 - Top right, medium size -->
+                        <img 
+                            src="/images/produk1.png" 
+                            alt="Produk 1" 
+                            class="absolute top-0 right-36 w-32 h-52 xl:w-40 xl:h-64 object-cover rounded-lg shadow-lg z-20"
+                        />
+                        
+                        <!-- Image 2 - Bottom center, landscape -->
+                        <img 
+                            src="/images/produk2.png" 
+                            alt="Produk 2" 
+                            class="absolute bottom-8 right-36 w-52 h-28 xl:w-64 xl:h-32 object-cover rounded-lg shadow-lg z-10"
+                        />
+                        
+                        <!-- Image 3 - Full height, rightmost -->
+                        <img 
+                            src="/images/produk3.png" 
+                            alt="Produk 3" 
+                            class="absolute top-0 -right-6 w-32 h-full xl:w-40 xl:h-full object-cover rounded-lg shadow-lg z-30"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background decorative elements -->
+        <div class="absolute top-10 right-10 w-20 h-20 bg-orange-200 rounded-full opacity-20"></div>
+        <div class="absolute bottom-20 left-10 w-16 h-16 bg-orange-300 rounded-full opacity-30"></div>
+    </section>
+
+    <!-- Demo: Additional content to show scroll behavior -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">Produk Unggulan Kami</h3>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Temukan berbagai produk berkualitas dari pengrajin lokal Desa Panaikang yang telah 
+                    terpercaya dan memiliki cita rasa autentik.
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!-- Profil Mahasiswa -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+                <div class="flex justify-center">
+                    <div class="w-64 h-64 rounded-full overflow-hidden shadow-lg">
+                        <img src="/images/ilham.png" alt="Muh. Ilham Maulana Ramlan" class="w-full h-full object-cover" />
+                    </div>
+                </div>
+                <div class="text-center lg:text-left">
+                    <h3 class="text-2xl font-bold mb-4">Profil Mahasiswa Pelaksana KKN</h3>
+                    <p class="mb-4">
+                        Halo! Saya <strong>Muh. Ilham Maulana Ramlan</strong>, mahasiswa Universitas Hasanuddin yang sedang
+                        menjalankan Kuliah Kerja Nyata (KKN) di Desa Panaikang.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Website ini merupakan inisiatif dari program kerja saya yang bertujuan untuk mendorong digitalisasi
+                        UMKM desa. Harapannya, UMKM lokal bisa lebih mudah dijangkau oleh masyarakat di luar desa dan
+                        mendapat dukungan lebih besar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Pemerintah Desa -->
+    <section class="py-16 bg-gradient-to-b from-white via-[#FEECDA] to-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+                <div class="text-center lg:text-left order-2 lg:order-1">
+                    <h3 class="text-2xl font-bold mb-4">Sepatah Kata dari Pemerintah Desa</h3>
+                    <blockquote class="italic text-gray-700 text-lg">
+                        "Kami menyambut baik inisiatif pembuatan katalog UMKM ini. Semoga dengan adanya media digital ini,
+                        pelaku UMKM di Desa Panaikang bisa semakin berkembang dan produk-produk lokal bisa lebih dikenal
+                        masyarakat luas."
+                    </blockquote>
+                </div>
+                <div class="flex justify-center order-1 lg:order-2">
+                    <div class="w-64 h-64 rounded-full overflow-hidden shadow-lg">
+                        <img src="/images/kades.png" alt="Kepala Desa" class="w-full h-full object-cover" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cara Mendaftar -->
+    <section class="py-16 px-6" id="cara-mendaftar">
+        <div class="max-w-7xl mx-auto">
+            <!-- Grid Utama -->
+            <div class="grid md:grid-cols-2 items-center gap-8">
+                <!-- Ilustrasi -->
+                <div class="text-center md:text-left">
+                    <img src="/images/about.png" alt="Ilustrasi UMKM" class="w-full max-w-md mx-auto md:mx-0">
+                </div>
+
+                <!-- Langkah-langkah -->
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center md:text-left">Cara Mendaftarkan UMKM ke
+                        Website</h2>
+                    <div class="space-y-6">
+                        <!-- Step 1 -->
+                        <div class="bg-[#F6F1EA] rounded-lg p-4 flex items-start gap-4 shadow-sm">
+                            <div class="bg-[#F5F3ED] p-3 rounded-full  flex items-center justify-center">
+                                <img src="/images/icons/1.png" alt="Pendaftaran" class="w-full h-full object-contain">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Siapkan Data</h4>
+                                <p class="text-gray-700 text-sm">Kumpulkan data penting tentang usaha Anda, seperti nama
+                                    UMKM, nama pemilik, dan kontak yang bisa dihubungi.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="bg-[#F6F1EA] rounded-lg p-4 flex items-start gap-4 shadow-sm">
+                            <div class="bg-[#F5F3ED] p-3 rounded-full  flex items-center justify-center">
+                                <img src="/images/icons/2.png" alt="Pendaftaran" class="w-full h-full object-contain">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Pilih Produk</h4>
+                                <p class="text-gray-700 text-sm">Tentukan produk atau jasa yang ingin ditampilkan di
+                                    katalog, misalnya kue tradisional, jasa jahit atau kerajinan bambu.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="bg-[#F6F1EA] rounded-lg p-4 flex items-start gap-4 shadow-sm">
+                            <div class="bg-[#F5F3ED] p-3 rounded-full  flex items-center justify-center">
+                                <img src="/images/icons/3.png" alt="Pendaftaran" class="w-full h-full object-contain">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Lengkapi Informasi</h4>
+                                <p class="text-gray-700 text-sm">Isi deskripsi produk, harga, dan unggah foto terbaik
+                                    produk Anda agar menarik minat pembeli.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tombol di Tengah -->
+            <div class="mt-12 text-center">
+                <a href="https://forms.gle/zssKQgXvxYZds3vL6" target="_blank"
+                    class="bg-[#5C3A21] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#422913] transition">
+                    Isi Formulir Pendaftaran
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anggota KKN -->
+    <!-- Meet Our Team Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Title dan Subtitle -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Meet Our Team</h2>
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Dengan semangat pengabdian, kami—mahasiswa KKN Universitas Hasanuddin—hadir di Desa Panaikang untuk belajar bersama masyarakat, menggali potensi lokal, dan menumbuhkan semangat kolaborasi. Kami datang bukan hanya membawa program, tapi juga hati yang siap untuk melayani dan tumbuh bersama.
+                    </p>
+                </div>
+            </div>
+
+        <!-- Foto Tim -->
+        <div class="text-center">
+            <img src="/images/full.png" alt="Anggota KKN" class="mx-auto max-w-full h-auto rounded-xl" />
+        </div>
+        <!-- Caption Full Width -->
+        <div class="bg-[#FCEEDE] px-4 py-3 text-sm text-gray-800 font-semibold text-center tracking-wide uppercase w-full">
+            KKN TEMATIK UNIVERSITAS HASANUDDIN GELOMBANG 114 DESA PANAIKANG
+        </div>
+    </section>
+
+
+<footer class="bg-white border-t-2 border-gray-100 shadow-lg mt-auto">
+    <!-- Main Footer Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            
+            <!-- Logo Section -->
+            <div class="flex justify-center md:justify-start">
+                <div class="text-center md:text-left">
+                    <img src="/images/logo.png" alt="Logo UMKM Panaikang" class="h-14 w-auto mx-auto md:mx-0 mb-2" />
+                    <p class="text-sm text-gray-600 max-w-xs">
+                        Katalog Online UMKM Desa Panaikang
+                    </p>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="flex justify-center">
+                <nav class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 text-center">
+                    <a href="umkm.html" 
+                       class="text-sm font-medium text-gray-700 hover:text-amber-600 transition-colors duration-300 py-1">
+                        UMKM
+                    </a>
+                    <a href="produk.html" 
+                       class="text-sm font-medium text-gray-700 hover:text-amber-600 transition-colors duration-300 py-1 whitespace-nowrap">
+                        Produk UMKM
+                    </a>
+                    <a href="about.html" 
+                       class="text-sm font-medium text-gray-700 hover:text-amber-600 transition-colors duration-300 py-1">
+                        About
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Partner Logos -->
+            <div class="flex justify-center md:justify-end">
+                <div class="flex items-center space-x-4">
+                    <div class="group">
+                        <img src="/images/posko.png" 
+                             alt="Logo Unhas" 
+                             class="h-16 w-auto transition-transform duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="group">
+                        <img src="/images/kkn.png" 
+                             alt="Logo KKN" 
+                             class="h-10 w-auto transition-transform duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="group">
+                        <img src="/images/sinjai.png" 
+                             alt="Logo Kabupaten Sinjai" 
+                             class="h-12 w-auto transition-transform duration-300 group-hover:scale-105" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-200 mt-8 pt-6">
+            <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+                <!-- Contact Info -->
+                <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-600">
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                        </svg>
+                        Desa Panaikang, Kab. Sinjai
+                    </span>
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        info@umkmpanaikang.com
+                    </span>
+                </div>
+
+                <!-- Social Media -->
+            <!-- WhatsApp Contacts -->
+            <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
+                <span class="text-sm text-gray-600 font-medium">Hubungi Kami:</span>
+                
+                <!-- Contact 1 - M.Ilham Maulana -->
+                <a href="https://wa.me/6287746253610" 
+                target="_blank"
+                class="flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-colors duration-300 text-sm font-medium">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                    </svg>
+                    <span>M.Ilham Maulana</span>
+                </a>
+                
+                <!-- Contact 2 - Pak Sekdes -->
+                <a href="https://wa.me/6285238629517" 
+                target="_blank"
+                class="flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-colors duration-300 text-sm font-medium">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                    </svg>
+                    <span>Pak Sekdes Panaikang</span>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Bar -->
+    <div class="bg-gradient-to-r from-[#A48A72] to-[#8B7355] text-center py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-sm text-white font-medium">
+                © 2025 Katalog UMKM Panaikang | 
+                <span class="text-amber-200">Program KKN Universitas Hasanuddin</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    </script>
+</body>
+
+</html>
